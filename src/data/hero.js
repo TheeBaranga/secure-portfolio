@@ -16,9 +16,24 @@ export const hero = {
     secondary: "Download Resume",
   },
 
+  status: "Open to Internships",
+
   focus: [
     "Application Security",
     "Secure SDLC",
     "DevSecOps",
+  ],
+
+  languages: [
+    "C#",
+    "Java",
+    "Python",
+    "JavaScript",
+  ],
+
+  learning: [
+    "Docker",
+    "GitHub Actions",
+    "Linux",
   ],
 };
