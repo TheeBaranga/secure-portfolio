@@ -1,4 +1,5 @@
 import { hero } from "../../data/hero";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -7,7 +8,15 @@ function Hero() {
 
         {/* LEFT SIDE */}
 
-        <div className="max-w-xl">
+        <motion.div
+          className="max-w-xl"
+          initial={{ opacity: 0, y: 30 }} /*When the page loads: invisible, 30px lower */
+          animate={{ opacity: 1, y: 0 }} /* visible, at original position */
+          transition={{
+            duration: 0.7,
+            ease: "easeOut",
+          }}
+        >
 
           <span className="rounded-full border border-blue-500 px-4 py-2 text-sm text-blue-400">
             {hero.badge}
@@ -31,21 +40,30 @@ function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-4">
 
-            <button className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30">
+            <button className="rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-500/30">
             {hero.buttons.primary}
             </button>
 
-            <button className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-slate-300 transition-all duration-300 hover:border-blue-500 hover:text-white">
+            <button className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500 hover:text-white">
             {hero.buttons.secondary}
             </button>
 
           </div>
 
-        </div>
+        </motion.div>
 
         {/* RIGHT SIDE */}
 
-        <div className="rounded-2xl border border-slate-700 bg-slate-900 p-8">
+        <motion.div
+          className="rounded-2xl border border-slate-700 bg-slate-900 p-8"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.2,
+            ease: "easeOut",
+          }}
+        >
 
           <h3 className="text-xl font-semibold text-white">
             🔒 Security Profile
@@ -92,7 +110,7 @@ function Hero() {
               {hero.languages.map((language) => (
                 <span
                   key={language}
-                  className="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-300"
+                  className="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-300 transition-colors duration-300 hover:bg-slate-700"
                 >
                   {language}
                 </span>
@@ -123,7 +141,7 @@ function Hero() {
 
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
     </section>
