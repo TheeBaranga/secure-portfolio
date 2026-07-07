@@ -13,7 +13,6 @@ export const skillGroups =
                 { name: "CSS", icon: FaCss3Alt },
                 { name: "Tailwind CSS", icon: SiTailwindcss },
             ]
-
         },
         {
             title: "Backend",
