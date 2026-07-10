@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6 py-20">
+    <section id="home" className="min-h-screen flex items-center px-6 py-20">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-2">
 
         {/* LEFT SIDE */}
