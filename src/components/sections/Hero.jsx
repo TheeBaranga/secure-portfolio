@@ -19,7 +19,13 @@ function Hero() {
         >
 
           <span className="rounded-full border border-blue-500 px-4 py-2 text-sm text-blue-400">
-            {hero.badge}
+            <span className="sm:hidden">
+              APPSEC • DEVSECOPS
+            </span>
+
+            <span className="hidden sm:inline">
+              {hero.badge}
+            </span>
           </span>
 
           <h1 className="mt-6 max-w-2xl whitespace-pre-line text-5xl font-extrabold leading-tight tracking-tight text-white lg:text-6xl">
