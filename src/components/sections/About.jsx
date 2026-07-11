@@ -5,7 +5,7 @@ function About() {
     return (
         <section
             id="about"
-            className="mx-auto max-w-7xl px-6 py-24"
+            className="mx-auto relative max-w-7xl px-6 py-24"
         >
             <SectionWrapper delay={0.1}>
 

@@ -18,7 +18,7 @@ function Navbar() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id);
+                        setActiveSection(entry.target.getAttribute("id"));
                     }
                 });
             },
@@ -51,8 +51,8 @@ function Navbar() {
                             key={link.href}
                             href={link.href}
                             className={`transition-colors duration-300 hover:text-white ${activeSection === link.href.slice(1)
-                                    ? "text-blue-400"
-                                    : "text-slate-300"
+                                ? "text-blue-400"
+                                : "text-slate-300"
                                 }`}
                         >
                             {link.name}

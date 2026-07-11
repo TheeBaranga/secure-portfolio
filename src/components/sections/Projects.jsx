@@ -8,7 +8,7 @@ function Projects() {
   const otherProjects = projects.slice(3);
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 relative">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

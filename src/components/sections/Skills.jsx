@@ -8,7 +8,7 @@ function Skills() {
         <SectionWrapper delay={0.2}>
             <section
                 id="skills"
-                className="mx-auto max-w-7xl px-6 py-24"
+                className="mx-auto relative max-w-7xl px-6 py-24"
             >
                 <h2 className="text-4xl font-bold text-white">
                     Skills
