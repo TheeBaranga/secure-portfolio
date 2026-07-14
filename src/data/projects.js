@@ -6,7 +6,7 @@ export const projects = [
     tech: ["Python", "Flask", "Scikit-learn", "Pandas"],
     github: "https://github.com/TheeBaranga/sleep-health-predictor.git",
     live: "https://sleep-health-predictor.onrender.com",
-    image: "/images/sleep-health.png",
+    image: `${import.meta.env.BASE_URL}images/sleep-health.png`,
   },
 
   {
@@ -16,7 +16,7 @@ export const projects = [
     tech: ["React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/TheeBaranga/secure-portfolio.git",
     live: "",
-    image: "/images/portfolio.png",
+    image: `${import.meta.env.BASE_URL}images/portfolio.png`,
   },
 
   {
@@ -26,7 +26,7 @@ export const projects = [
     tech: ["Arduino", "Bluetooth", "LCD", "Sensors"],
     github: "...",
     live: "",
-    image: "/images/smart-classroom.png",
+    image: `${import.meta.env.BASE_URL}images/smart-classroom.png`,
   },
 
   {
@@ -36,6 +36,6 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/TheeBaranga/ecommerce-platform.git",
     live: "",
-    image: "/images/ecommerce.png",
+    image: `${import.meta.env.BASE_URL}images/ecommerce.png`,
   },
 ];
