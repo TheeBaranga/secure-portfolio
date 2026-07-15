@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/images/portfolio.png" alt="Portfolio Preview" />
+  <img src="./docs/portfolio-demo.gif" alt="Portfolio Demo" width="100%" />
 </p>
 
 <div align="center">
